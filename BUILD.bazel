@@ -1,8 +1,8 @@
 load("@rules_java//java:defs.bzl", "java_binary")
 
 java_binary(
-  name = "bin",
-  srcs = glob(["src/**/*.java"]),
-  resources = ["//resources"],
-  main_class = "pkg.Main",
+    name = "bin",
+    srcs = glob(["src/**/*.java"]),
+    main_class = "pkg.Main",
+    resources = ["//resources"],
 )
