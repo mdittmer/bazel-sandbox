@@ -3,6 +3,6 @@ load("@rules_java//java:defs.bzl", "java_binary")
 java_binary(
   name = "bin",
   srcs = glob(["src/**/*.java"]),
-  resources = glob(["resources/**/*"]),
+  resources = glob(["resource_home/**/*"]),
   main_class = "pkg.Main",
 )
