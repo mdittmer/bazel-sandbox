@@ -1,0 +1,14 @@
+load("//:rules.bzl", "my_custom_rule", "my_custom_test")
+
+my_custom_rule(
+    name = "alpha_beta_rule",
+    srcs = [
+        "alpha",
+        "beta",
+    ],
+)
+
+my_custom_test(
+    name = "alpha_beta_test",
+    custom_rule = ":alpha_beta_rule",
+)

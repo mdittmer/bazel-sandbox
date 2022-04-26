@@ -1,0 +1,8 @@
+digraph mygraph {
+  node [shape=box];
+  "//:alpha_beta_test"
+  "//:alpha_beta_test" -> "//:alpha_beta_rule"
+  "//:alpha_beta_rule"
+  "//:alpha_beta_rule" -> "//:alpha\n//:beta"
+  "//:alpha\n//:beta"
+}
