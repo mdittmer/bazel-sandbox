@@ -1,0 +1,9 @@
+load("//:rules.bzl", "my_custom_rule")
+
+my_custom_rule(
+    name = "alpha_rule",
+    visibility = ["//visibility:public"],
+    srcs = [
+        "alpha",
+    ],
+)

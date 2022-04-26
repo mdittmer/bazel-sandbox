@@ -10,5 +10,5 @@ my_custom_rule(
 
 my_custom_test(
     name = "alpha_beta_test",
-    custom_rule = ":alpha_beta_rule",
+    custom_rules = ["//extra:alpha_rule", ":alpha_beta_rule"],
 )
