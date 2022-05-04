@@ -1,0 +1,13 @@
+load("@aspect_rules_swc//swc:swc.bzl", "swc")
+
+swc(
+    name = "swc",
+    srcs = glob([
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.jsx",
+        "**/*.mjs",
+        "**/*.cjs",
+        # "**/*.js",
+    ], exclude = ["**/*.d.ts"]),
+)
