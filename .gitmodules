@@ -1,0 +1,6 @@
+[submodule "js/rules_swc"]
+	path = js/rules_swc
+	url = https://github.com/aspect-build/rules_swc.git
+[submodule "js/bazel-lib"]
+	path = js/bazel-lib
+	url = https://github.com/aspect-build/bazel-lib.git
